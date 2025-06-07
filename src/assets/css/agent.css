@@ -1,0 +1,865 @@
+p {
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+h1 {
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+h2 {
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+h3 {
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+body {
+    max-width: 1500px;
+    margin: 0 auto !important;
+}
+
+/*ヘッダー*/
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #B2B2B2;
+    border-bottom: solid 1px var(--gray-light-color);
+    padding-left: 24px;
+    z-index: 10000;
+    transition: background-color .3s linear;
+    display: flex !important;
+    justify-content: space-between;
+    transition: background-color .4s linear;
+}
+
+.header-logo{
+    display: flex;
+}
+
+.header-logo img {
+    height: 110%;
+}
+
+.header-logo p {
+    margin-top: 25px;
+    margin-left: 10px;
+    font-size: 32px;
+}
+.header-nav {
+    margin-top: 1%;
+    margin-top: -0.01%;
+    width: 400px;
+}
+
+.header-navLink {
+    font-weight: bold;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 400;
+    line-height: 1.8;
+    letter-spacing: .1em;
+    text-align: right;
+    margin-left: 55%;
+    font-size: 32px;
+    padding-top: 10px;
+    display: inline-block; /* インラインブロックにすることで中央に寄る */
+}
+
+.header-navList img {
+    height: 70px;
+}
+.header-go {
+    width: 100%;
+    height: 73px;
+}
+
+/*ログイン画面*/
+.login-padding {
+    padding: 0px 100px;
+}
+.login-title {
+    font-size: 40px;
+    font-weight: 700;
+    color:#797979;
+    margin-top: 40px;
+}
+
+.login-form-top {
+    padding: 12px 12px 12px 0;
+    display: block;
+    margin-left: 30px;
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 24px;
+}
+
+.login-form input{
+    width: 80%;
+    padding: 12px;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    margin-left: 30px;
+    resize: vertical;
+    background-color: #ffffff;
+}
+
+.error-message {
+    color: #FF0000;
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.login-button-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-button {
+    width: 30%;
+    background-color: #4E4E4E;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 400;
+    padding: 15px;
+    color: #FFFFFF;
+    border-radius: 8px;
+    height: 100%;
+    text-align: center;
+    border: 1px solid #4E4E4E;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+.login-button:hover {
+    background-color: #FFFFFF;
+    color: #4E4E4E;
+    transition: all 0.2s;
+
+}
+.password-changeButton {
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+/* トップ画面 */
+
+.agent-topbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px 20px 5px 20px;
+}
+
+.agent-name {
+    font-size: 40px;
+    font-weight: 700;
+    color:#797979;
+}
+
+.profile-button {
+    font-size: 32px;
+    width: 400px;
+    background-color: #4E4E4E;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 400;
+    padding: 15px;
+    color: #FFFFFF;
+    border-radius: 8px;
+    height: 100%;
+    text-align: center;
+    border: 1px solid #4E4E4E;
+    margin-left: 40%;
+}
+
+.profile-button:hover {
+    background-color: #FFFFFF;
+    color: #4E4E4E;
+    transition: all 0.2s;
+
+}
+/*エージェントのステータス表示 */
+
+.agent-status {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1fr 2fr 2fr;
+    height: 140px;
+    padding: 20px;
+}
+
+.agent-status-top {
+    font-size: 40px;
+    font-weight: 700;
+    color:#797979;
+    margin-top:20px;
+}
+
+.agent-status-contentTop {
+    font-size: 24px;
+    font-weight: 700;
+    color:#797979;
+}
+.agent-status-content {
+    display: flex;
+    font-size: 24px;
+    font-weight: 700;
+    color:#797979;
+    margin: 0 auto;
+}
+
+.agent-status-contentNumber {
+    font-size: 64px;
+    color: #008Be2;
+    margin-right: 30px;
+}
+
+.agent-status-contentAdjustment {
+    margin-top: 30px;
+}
+
+.agent-status-rest {
+    font-size: 22px;
+    font-weight: 700;
+    color:#797979;
+    line-height: 1.8;
+}
+
+.agent-status-rest-period {
+    font-size: 20px;
+}
+.agent-status-rest span {
+    color: #008Be2;
+}
+
+.agents-paging-information {
+    font-size: 20px;
+    margin-left: 40px;
+    margin-bottom: 5px;
+    color: #797979;
+}
+
+.agents {
+    width: 95%;
+    margin: 3%;
+    margin-top: 30px;
+    font-family: "Noto Sans JP", sans-serif;
+    line-height: 2.5;
+    font-size: 20px;
+}
+
+.agents-top {
+    background-color: #d9d9d9;
+    height: 30px;
+    margin: 0 auto;
+    padding-top: 10px;
+    font-weight: 500;
+}
+
+.agents-top th {
+    text-align: left;
+    padding: 0 20px;
+}
+
+.agents-top th:nth-child(1) {
+    width: 10%;
+}
+
+.agents-top th:nth-child(2) {
+    width: 15%;
+}
+
+.agents-top th:nth-child(3) {
+    width: 15%;
+}
+
+.agents-top th:nth-child(4) {
+    width: 15%;
+}
+
+.agents-top th:nth-child(6) {
+    width: 10%;
+}
+
+.agents-top th:nth-child(7) {
+    width: 10%;
+}
+.agents-contents {
+    padding-top: 10px;
+}
+
+.agents-contents:hover {
+    background-color: #E5F7FF;
+    transition: all 0.2s;
+}
+.agents-check {
+    appearance: auto;
+    width: 27px;
+    height: 27px;
+    border:1px solid #000000;
+    border-radius: 20px;
+}
+
+.agents-check-true {
+    background-color: #1BDDA8;
+}
+.agents-detail {
+    text-decoration: underline;
+    margin-bottom: 5px;
+}
+.agents-detail:hover {
+    color: #008Be2;
+}
+
+.agents-alert {
+    color: #FF0000;
+    text-decoration: underline;
+    padding: 10px 0;
+}
+
+.agents-alert-end {
+    color: #df9bff;
+}
+
+.agents-alert:hover {
+    color: #008Be2;
+}
+
+.center{
+    text-align: center !important;
+}
+/*ページングメニュー制作*/
+
+.paging {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.paging-back {
+    transform: scaleX(-1);
+    margin:0px 20px;
+    padding: 7px 0;
+}
+
+.paging-contents {
+    width: 44px;
+    height: 44px;
+    border:1px solid #000000;
+    border-radius: 20px;
+    font-size:20px;
+    text-align: center;
+    padding:8px 0;
+    margin:0px 20px;
+    margin-bottom: 15px;
+}
+
+.paging-forward {
+    margin:0px 20px;
+    padding: 7px 0;
+}
+
+.paging-now {
+    background-color: #4E4E4E;
+    color: #FFFFFF;
+}
+.paging-back:hover {
+    transform: scale(-1.2);
+  }
+
+.paging-contents:hover {
+    transform: scale(1.2);
+  }
+
+.paging-forward:hover {
+    transform: scale(1.2);
+  }
+
+  /*詳細表示*/
+
+  .details-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.details {
+    display: block;
+    width: 60%;
+    max-width: 1500px;
+    height: 85%;
+    max-height: 750px;
+    position: fixed;
+    z-index: 100;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 20px;
+    border: 3px solid #000000;
+}
+
+.closed {
+    display: none;
+  }
+
+.details-top {
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.details-title {
+    font-size: 34px;
+    font-weight: 700;
+    color:#797979;
+}
+
+.details-closeButton {
+    width: 25%;
+    align-items: right;
+    margin-left: 73%;
+    filter: brightness(0);
+}
+
+.details-contents-block {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 77%;
+    margin-top: 20px;
+}
+.details-contents-top {
+    font-size: 24px;
+    margin: 20px 0px;
+    color:#008Be2;
+}
+
+.details-contents {
+    font-size: 20px;
+    margin: 20px 0px;
+}
+
+.details-alertButton{
+    width: 30%;
+    height:50px;
+    background-color: #FF0000;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 400;
+    color: #FFFFFF;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #FF0000;
+    margin-left: 70%;
+    font-size: 25px;
+    margin-top: 5px;
+}
+
+.details-alertButton:hover {
+    background-color: #FFFFFF;
+    color: #FF0000;
+    transition: all 0.2s;
+}
+
+/*通報フォーム*/
+
+.alert-teach {
+    font-size: 24px;
+    margin: 30px;
+    text-align: center;
+}
+
+.alert-box {
+    background-color: #F0F0F0;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.alert-title {
+    font-size:40px;
+    font-weight: 700;
+    color:#797979;
+    padding-top: 25px;
+    text-align: center;
+}
+
+.alert-item {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.alert-item-top {
+    font-size: 24px;
+    margin-right: 70px;
+    padding-top: 7px;
+}
+
+.alert-item-content {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.alert-item-select {
+    width: 30%;
+    height:75%;
+    padding: 12px;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 30px;
+    resize: vertical;
+    background-color: #ffffff;
+    background-image: url(../img/Polygon\ 6.png); /* 矢印画像のURLを指定 */
+    background-repeat: no-repeat; /* 矢印画像を繰り返し表示しない */
+    background-position: right 10px center; /* 矢印画像の位置を指定 */
+    background-size: 13%;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 400;
+}
+
+.alert-item-select:focus {
+    background-image: url(../img/batten\ black.png);
+  }
+
+.alert-reason-top {
+    font-size: 24px;
+    margin-left:10%;
+}
+
+.alert-reason {
+    width: 75%;
+    height: 130px;
+    background-color: #FFFFFF;
+    margin-left: 12.5%;
+    padding: 12px;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-top: 30px;
+} 
+
+.alert-reason:focus {
+    border-width: 3px;
+}
+
+.alert-confirm-button {
+    width: 30%;
+    background-color: #4E4E4E;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 400;
+    padding: 15px;
+    color: #FFFFFF;
+    border-radius: 8px;
+    height: 70px;
+    text-align: center;
+    border: 1px solid #4E4E4E;
+    margin-left: 35%;
+    font-size: 32px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.alert-confirm-button:hover {
+    background-color: #FFFFFF;
+    color: #4E4E4E;
+    transition: all 0.2s;
+}
+
+/*確認画面*/
+.alert-box-confirm{
+    background-color: #F0F0F0;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 8px;
+    margin-top: 60px;
+}
+
+.alert-reason-confirm {
+    font-size: 18px;
+    margin-left: 3%;
+    margin-top: 3%;
+    width: 60%;
+    overflow-wrap: break-word;
+}
+
+.alert-reason-confirmBox {
+    display: flex;
+}
+
+.alert-reason-top-confirm {
+    padding-top: 3%;
+    font-size: 24px;
+    margin-left:14%;
+}
+
+.alert-confirm-buttonBox {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-right: 7%;
+}
+
+.alert-confirm-backButton {
+    width: 30%;
+    background-color: #4E4E4E;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 400;
+    padding: 15px;
+    color: #FFFFFF;
+    border-radius: 8px;
+    height: 70px;
+    text-align: center;
+    border: 1px solid #4E4E4E;
+    margin-left: 10%;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.alert-confirm-backButton:hover {
+    background-color: #FFFFFF;
+    color: #4E4E4E;
+    transition: all 0.2s;
+}
+
+.alert-confirm-goButton {
+    width: 30%;
+    background-color: #4E4E4E;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 400;
+    padding: 15px;
+    color: #FFFFFF;
+    border-radius: 8px;
+    height: 70px;
+    text-align: center;
+    border: 1px solid #4E4E4E;
+    margin-left: 10%;
+    font-size: 32px;
+}
+
+.alert-confirm-goButton:hover {
+    background-color: #FFFFFF;
+    color: #4E4E4E;
+    transition: all 0.2s;
+}
+
+.complete-box {
+    margin: 0 auto;
+    width: 70%;
+    background-color: #F0F0F0;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    padding: 20px;
+    min-width: 650px;
+    margin-top: 60px;
+}
+
+.complete-title {
+    color: #797979;
+    font-size: 48px;
+    font-weight: 600;
+    text-align: center;
+    margin: 20px 20px 0px 20px;
+}
+.complete-text {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    margin:50px 70px 0px 70px;
+}
+
+.complete-submit-button {
+    width: 50%;
+    background-color: #4E4E4E;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 400;
+    padding: 15px;
+    color: #FFFFFF;
+    border-radius: 8px;
+    height: 70px;
+    text-align: center;
+    border: 1px solid #4E4E4E;
+    margin-left: 25%;
+    font-size: 32px;
+    margin-top: 30px;
+}
+
+/* 編集ポップアップの実装 */
+
+
+.edit {
+    width: 90%;
+    z-index: 100;
+    left: 50%;
+    top: 55%;
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 60px;
+}
+
+.edit-title {
+    font-size: 44px;
+    font-weight: 700;
+    color:#797979;
+    margin-left: 32%;
+}
+
+
+.edit-content {
+    margin-top: 70px;
+}
+.edit-item {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 32%;
+}
+
+input[type='file'] {
+    color: #000000;
+    cursor: pointer;
+    border: 2px solid #000000;
+    border-radius: 0.375rem;
+    padding-right: 0.5rem;
+    width: 30rem;
+    margin-top: 20px;
+    height: 40px;
+    margin-left: 35%;
+  }
+  
+  ::file-selector-button,
+  ::-webkit-file-upload-button {
+    background-color: #F0F0F0;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    border-right: 1px solid rgb(191, 194, 199);
+    padding: 0.25rem 1rem;
+    margin-right: 1rem;
+    height: 40px;
+  }
+
+.edit-write {
+    width: 50%;
+    height: 40px;
+    padding: 12px;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 16px;
+    resize: vertical;
+    background-color: #ffffff;
+    margin-left: 35%;
+}
+
+.edit-select {
+    width:40%;
+    height:40px;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 16px;
+    resize: vertical;
+    background-color: #ffffff;
+    background-image: url(../img/Polygon\ 6.png); /* 矢印画像のURLを指定 */
+    background-repeat: no-repeat; /* 矢印画像を繰り返し表示しない */
+    background-position: right 10px center; /* 矢印画像の位置を指定 */
+    background-size: 6%;
+    padding: 8px;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 400;
+    padding-left: -20%;
+    margin-left: 35%;
+}
+
+.edit-select:focus {
+    background-image: url(../img/batten\ black.png);
+  }
+
+  .edit-form {
+    width: 50%;
+    padding: 12px;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    resize: vertical;
+    background-color: #ffffff;
+    display:flex;
+    flex-flow: column;
+    gap: 10px;
+    margin-left: 35%;
+}
+.edit-form-input {
+    appearance: auto;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    margin-right: 5px;
+    transform: translate(0, -2px);
+}
+.edit-form-label {
+    font-size: 20px;
+}
+
+.edit-information {
+    width: 50%;
+    height: 100px;
+    padding: 12px;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 16px;
+    resize: vertical;
+    background-color: #ffffff;
+    margin-left: 35%;
+}
+
+.edit-complete-button {
+    width: 30%;
+    background-color: #4E4E4E;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 400;
+    padding: 15px;
+    color: #FFFFFF;
+    border-radius: 8px;
+    height: 70px;
+    text-align: center;
+    border: 1px solid #4E4E4E;
+    margin-left: 42.5%;
+    font-size: 32px;
+    margin-top: 50px;
+}
+
+.edit-complete-button:hover {
+    background-color: #FFFFFF;
+    color: #4E4E4E;
+    transition: all 0.2s;
+}
+
+.form_error_message {
+    color: #FF0000;
+    font-size: 16px;
+    margin-left: 35%;
+    margin-top: 10px;
+}
+
+#inputlength2 {
+    margin-left: 35%;
+    margin-top: 10px;
+    font-size: 16px;
+}
